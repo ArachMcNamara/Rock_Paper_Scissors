@@ -4,8 +4,22 @@ import java.awt.event.ActionListener;
 import java.util.Random;
 
 public class RockPaperScissorsFrame extends JFrame {
+    /**
+     * Main GUI frame for the Rock Paper Scissors game.
 
-    // Player stats
+     * This class builds the graphical user interface, handles user input,
+     * applies computer strategies, updates statistics, and displays results.
+
+     * It contains three inner strategy classes:
+     * LeastUsed: chooses the move that beats the player's least-used move
+     * MostUsed: chooses the move that beats the player's most-used move
+     * LastUsed: chooses the move that beats the player's previous move
+
+     * External strategies:
+     * Cheat
+     * RandomStrategy
+     */
+        // Player stats
     private int playerWins = 0;
     private int computerWins = 0;
     private int ties = 0;
